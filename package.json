@@ -1,0 +1,24 @@
+{
+  "name": "gulpstuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "test": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "private": true,
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "test": "gulp"
+  }
+}

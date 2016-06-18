@@ -1,0 +1,33 @@
+#block-menu-menu-secondary {
+  text-align: right;
+  ul.menu {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    
+    li {
+      list-style: none;
+    }
+    a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 0.9em;
+
+      &:link,
+      &:visited {
+        color: $menu;
+      }
+
+      &:hover,
+      &:focus {
+        $color: $menu_hover;
+      }
+
+      &:active,
+      &.active {
+        $color: $menu_active;
+      }
+    }
+  }
+}

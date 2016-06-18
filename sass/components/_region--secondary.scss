@@ -1,0 +1,7 @@
+.l-secondary {
+  padding: ($vspace * 2) $hspace;
+
+  .container {
+    @include container;
+  }
+}

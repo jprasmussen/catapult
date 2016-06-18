@@ -1,0 +1,16 @@
+table {
+	width: 100%;
+}
+
+td, th {
+}
+
+th {
+}
+
+tr {
+	&.even {
+	}
+	&.odd {
+	}
+}

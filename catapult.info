@@ -1,0 +1,34 @@
+name = Catapult
+description = Please provide a description for your theme.
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/style.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/main.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[secondary] = Secondary
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
+regions[footer_a] = Footer A
+regions[footer_b] = Footer B
+regions[footer_c] = Footer C
