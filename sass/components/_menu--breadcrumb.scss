@@ -1,5 +1,5 @@
 .breadcrumb {
-  margin: 10px 0;
+  margin: 10px $hspace;
   display: block;
   font-size: 0.8em;
 
@@ -11,7 +11,7 @@
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
 
     &:link,
     &:visited {
