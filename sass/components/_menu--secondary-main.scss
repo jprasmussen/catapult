@@ -4,7 +4,7 @@
     list-style: none;
     display: inline-block;
     text-transform: uppercase;
-    
+
     li {
       list-style: none;
     }
@@ -21,12 +21,12 @@
 
       &:hover,
       &:focus {
-        $color: $menu_hover;
+        color: $menu_hover;
       }
 
       &:active,
       &.active {
-        $color: $menu_active;
+        color: $menu_active;
       }
     }
   }

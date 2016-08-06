@@ -16,12 +16,12 @@ ul.sf-main-menu {
 
     &:hover,
     &:focus {
-      $color: $menu_hover;
+      color: $menu_hover;
     }
 
     &:active,
     &.active {
-      $color: $menu_active;
+      color: $menu_active;
     }
   }
 }
