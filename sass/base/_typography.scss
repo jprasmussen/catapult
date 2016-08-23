@@ -8,11 +8,11 @@ body {
 // @TODO Include Typey https://github.com/jptaranto/typey.
 h1 {
   color: $title_fontcolor;
-  font: $title_font;
+  font-family: $title_font;
   font-size: 2.5em;
   font-weight: 500;
   line-height: 1em;
-  
+
 }
 
 h2 {
