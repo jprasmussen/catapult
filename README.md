@@ -8,8 +8,8 @@ the theme to be your own.
 This project depends on Node.js, Gulp.js, and Bower to compile SASS. To start
 run the following two commands from the project root:
 
-`npm install
-bower install`
+`npm install`
+`bower install`
 
 
 ## Commands ##
