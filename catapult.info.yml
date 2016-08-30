@@ -1,0 +1,25 @@
+name: Catapult
+type: theme
+description: A theme to get me started in Drupal 8.
+base theme: classy
+core: 8.x
+
+libraries:
+  - biolife/main
+
+
+regions:
+  header: 'Header'
+  branding: 'Branding'
+  banner: 'Banner'
+  highlighted: 'Highlighted area'
+  navigation: 'Navigation'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  secondary: 'Secondary'
+  tertiary: 'Tertiary'
+  footer: 'Footer'
+  footera: 'Footer A'
+  footerb: 'Footer B'
+  footerc: 'Footer C'

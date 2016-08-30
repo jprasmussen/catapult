@@ -1,0 +1,22 @@
+{
+  "name": "gulpstuff",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jeremy Rasmussen <jeremy@jprasmussen.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.7.0",
+    "susy": "^2.2.12"
+  }
+}

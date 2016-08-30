@@ -1,0 +1,50 @@
+
+fieldset {
+
+	.form-text {
+		width: 100%;
+	}
+}
+
+.form-text {
+	padding: 3px;
+}
+
+legend {
+
+}
+
+
+.form-submit,
+button,
+.button,
+.more {
+	@include button;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 4px 10px;
+}
+
+// Fixing table draggers.
+a.tabledrag-handle {
+	height: 22px;
+	width: 20px;
+	display: inline-block;
+}
+a.tabledrag-handle .handle {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAaVBMVEUAAABERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERdclAKAAAAInRSTlMAAQIGBwkLDQ8QExQXIy5NUV9+hY+bwMHFyMrV5Ojx8/X7tyFtCQAAAHRJREFUCB1NwQcSgkAURMEHLqKE5ZOUrDv3P6SWUhTd/N3HGyfpqjXlEC2SlohD3qjJOTEZOzdewGTgJgduVuV9p877SrPjqbMHZVDftoOGtu0VSijDFUwG11DylQAmAxJ2ca065hC9Jb0iDsWmreAkmzJ+PlA9CVEeqx8DAAAAAElFTkSuQmCC);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page-admin .form-actions {
+	padding-top: $vspace;
+}

@@ -1,0 +1,10 @@
+main:
+  version: VERSION
+  css:
+    base:
+      css/style.css: {}
+  js:
+      js/main.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

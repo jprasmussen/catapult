@@ -1,0 +1,29 @@
+<?php
+/**
+ * @file
+ * Catapult theme implementation file.
+ */
+
+function catapult_preprocess_html(&$variables) {
+// Sidebar conditional classes.
+  if (!empty($variables['page']['sidebar_first'])) {
+    $sidebar_left = $variables['page']['sidebar_first'];
+  }
+  if (!empty($variables['page']['sidebar_second'])) {
+    $sidebar_right = $variables['page']['sidebar_second'];
+  }
+  if (!empty($sidebar_left) && !empty($sidebar_right)) {
+    $variables['attributes']['class'][] = 'two-sidebars';
+  }
+  elseif (empty($sidebar_left) && !empty($sidebar_right)) {
+    $variables['attributes']['class'][] = 'one-sidebar';
+    $variables['attributes']['class'][] = 'has-sidebar-second';
+  }
+  elseif (!empty($sidebar_left) && empty($sidebar_right)) {
+    $variables['attributes']['class'][] = 'one-sidebar';
+    $variables['attributes']['class'][] = 'has-sidebar-first';
+  }
+  else {
+    $variables['attributes']['class'][] = 'no-sidebars';
+  }
+}

@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+
+}
+
+.l-header,
+.l-main,
+.l-footer {
+  @include clearfix();
+}
+
+@include breakpoint($xsmall) {}
+
+@include breakpoint($small) {}
+
+@include breakpoint($medium) {
+  .l-branding {
+    @include span(6);
+  }
+  .region-navigation {
+    @include span(last 6);
+  }
+  .region-header {
+    @include span(12);
+  }
+
+  .l-subfooter {
+    @include clearfix();
+    // @include container;
+  }
+  .region-footer-a {
+    @include span(4);
+  }
+  .region-footer-b {
+    @include span(4);
+  }
+  .region-footer-c {
+    @include span(last 4);
+  }
+}
+
+@include breakpoint($large) {}
+
+@include breakpoint($xlarge) {}

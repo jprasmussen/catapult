@@ -1,0 +1,25 @@
+// ------------------------------------
+// Breakpoints.
+// ------------------------------------
+$xsmall: 320px;
+$small: 500px; // small and up.
+$medium: 768px; // .... and up.
+$large: 940px; // .... and up.
+$xlarge: 1200px; // .... and up.
+
+$only-small: 0 767px; // Only small screens.
+$only-medium: 768 939px; // Only medium screens.
+$only-large: min-witdh 940px; // Large screens and up.
+
+
+
+// ------------------------------------
+// Susy Grids n stuff.
+// ------------------------------------
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  container: 1120px,
+  global-box-sizing: border-box
+  );

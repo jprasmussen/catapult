@@ -1,0 +1,31 @@
+.breadcrumb {
+  margin: 10px $hspace;
+  display: block;
+  font-size: 0.8em;
+
+  ol {
+    display: block;
+    li {
+      display: inline-block;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:link,
+    &:visited {
+      color: $body_fontcolor;
+    }
+
+    &:hover,
+    &:focus {
+      color: $menu_hover;
+    }
+
+    &:active,
+    &.active {
+      color: $menu_active;
+    }
+  }
+}

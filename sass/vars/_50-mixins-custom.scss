@@ -1,0 +1,93 @@
+// Gradient Maker.
+// @mixin gradient($color1: #efefef, $color2: #fff, $direction: bottom) {
+// 	background-color: $color1;
+// 	@include background-image(linear-gradient($direction, $color1 0%, $color2 100%));
+// }
+
+// Button Maker.
+@mixin button($color: $button_bg_color, $text: $button_fontcolor, $radius: $button_radius) {
+  color: $text !important; // overrides the text color in anchor tags.
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: none;
+
+  font-size: 0.85em;
+  font-weight: bold;
+
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-right:5px;
+  display: inline-block;
+
+	border-radius: $radius;
+  background-clip: padding-box;
+
+  background-color: $color;
+
+  &:link,
+  &:visited {
+  	background-color: $color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: lighten($color, 5%);
+  }
+}
+
+// Generates a link style with magic superpowers.
+@mixin linkme($color: $link, $hover: $link_hover, $active: $link_active) {
+  &:link,
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+
+  &:active,
+  &.active {
+    color: $active;
+  }
+}
+@mixin linkmebg($bg: transparent, $bghover: transparent, $bgactive: transparent) {
+  &:link,
+  &:visited {
+    background-color: $bg;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $bghover;
+  }
+
+  &:active,
+  &.active {
+    background-color: $bgactive;
+  }
+}
+
+// Some generic pixie dust to make things fly toward Never Never Land.
+// @mixin eyecandy($property: all, $duration: 0.5s, $function: ease-in-out, $delay: 0) {
+// 	@include transition-property($property);
+// 	@include transition-duration($duration);
+// 	@include transition-timing-function($function);
+// 	@include transition-delay($delay);
+// }
+
+@mixin animate($name, $duration: $AnimateDuration, $delay: 0, $iterate: 1) {
+  $delay: $delay + '';
+
+  @if (str-index($delay, s) == null) {
+    $delay: unquote($delay + 's');
+  }
+
+  animation: $name $duration $delay $iterate;
+}

@@ -1,0 +1,7 @@
+.l-main {
+  padding: $vspace $hspace;
+
+  .l-content {
+    position: relative; // this is for the local tasks.
+  }
+}

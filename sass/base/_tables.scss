@@ -1,0 +1,19 @@
+table {
+	width: 100%;
+}
+
+td, th {
+}
+
+th {
+  background-color: $table_header;
+}
+
+tr {
+	&.even {
+    background-color: $row_even;
+	}
+	&.odd {
+    background-color: $row_odd;
+	}
+}

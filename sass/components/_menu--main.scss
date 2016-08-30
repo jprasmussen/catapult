@@ -1,0 +1,27 @@
+ul.menu {
+  margin: 0 10px;
+}
+ul.sf-main-menu {
+  float: right;
+
+  li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $menu;
+    }
+
+    &:hover,
+    &:focus {
+      color: $menu_hover;
+    }
+
+    &:active,
+    &.active {
+      color: $menu_active;
+    }
+  }
+}
