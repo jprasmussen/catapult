@@ -8,9 +8,9 @@ html {
 
 }
 
-.l-header,
-.l-main,
-.l-footer {
+.layout-header,
+.layout-main,
+.layout-footer {
   @include clearfix();
 }
 
@@ -19,7 +19,7 @@ html {
 @include breakpoint($small) {}
 
 @include breakpoint($medium) {
-  .l-branding {
+  .region-branding {
     @include span(6);
   }
   .region-navigation {
@@ -29,17 +29,18 @@ html {
     @include span(12);
   }
 
-  .l-subfooter {
+  .secondary-footer,
+  .primary-footer {
     @include clearfix();
     // @include container;
   }
-  .region-footer-a {
+  .region-footera {
     @include span(4);
   }
-  .region-footer-b {
+  .region-footerb {
     @include span(4);
   }
-  .region-footer-c {
+  .region-footerc {
     @include span(last 4);
   }
 }
