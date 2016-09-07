@@ -7,14 +7,13 @@
 $body_font: 'Open Sans', sans-serif; // Default font.
 $body_fontsize: 16px; // Base or root font-size.
 $body_lineheight: 1.5em;
-$body_fontcolor: dkgray; // Default font color.
+$body_fontcolor: $dkgray; // Default font color.
 $body_bg_color: $smoke; // Page background color.
-// $layout_container_bg_color: #ffffff;
 
 
 // Titles and Headings.
 $title_font: null; // defaulting to body font;
-$title_fontcolor: $green; // This is for the H1.
+$title_fontcolor: $blue; // This is for the H1.
 $heading_font: $title_font; // This is for the rest of the headings.
 $heading_fontcolor: $title_fontcolor; // darken($blue, 3%); // This is for the rest of the headings.
 
@@ -46,7 +45,6 @@ $menu_font_weight: 400;
 
 // Layout and Structural Vars.
 $header_bg:	#ffffff;
-// $header_bg:	rgba(255,255,255, 0.7);
 $header_font: null;
 $header_fontcolor: $blue;
 

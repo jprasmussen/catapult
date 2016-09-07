@@ -1,7 +1,7 @@
 .layout-header {
   padding: $vspace $hspace;
-  background-size: cover;
   color: $header_fontcolor;
+  background-color: $header_bg;
   position: relative;
 
   .container {

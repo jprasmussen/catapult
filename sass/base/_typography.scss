@@ -34,11 +34,13 @@ h5, h6 {
 
 h2, h3, h4, h5, h6 {
   color: $heading_fontcolor;
-  font: $heading_fontcolor;
+  font-family: $heading_font;
   margin-bottom: 0.25em;
 }
 
-
+a {
+  @include linkme($link, $link_hover, $link_active);
+}
 
 footer a {
 }
