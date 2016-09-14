@@ -20,10 +20,10 @@ html {
 
 @include breakpoint($medium) {
   .l-branding {
-    @include span(6);
+    @include span(3);
   }
   .region-navigation {
-    @include span(last 6);
+    @include span(last 9);
   }
   .region-header {
     @include span(12);

@@ -7,10 +7,8 @@
 $body_font: 'Open Sans', sans-serif; // Default font.
 $body_fontsize: 16px; // Base or root font-size.
 $body_lineheight: 1.5em;
-$body_fontcolor: dkgray; // Default font color.
+$body_fontcolor: $dkgray; // Default font color.
 $body_bg_color: $smoke; // Page background color.
-// $layout_container_bg_color: #ffffff;
-
 
 // Titles and Headings.
 $title_font: null; // defaulting to body font;
@@ -55,7 +53,6 @@ $main_bg: null; // The main content aera.
 $footer_color: $blue; // Font color.
 $footer_bg: $ltblue; // Background color.
 $footer_size: 0.8em; // Text size.
-
 
 
 // Misc stuff.

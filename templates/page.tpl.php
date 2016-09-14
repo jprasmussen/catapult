@@ -133,17 +133,11 @@
 
   <footer class="l-footer" role="contentinfo">
     <div class="container">
-    <div class="footer-logo">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-      <?php endif; ?>
-    </div>
-
     <?php print render($page['footer']); ?>
     </div>
 
     <?php if ($page['footer_a'] || $page['footer_b'] || $page['footer_c']): ?>
-    <div class="l-subfooter">
+    <div class="container secondary">
       <?php if ($page['footer_a']): ?>
         <?php print render($page['footer_a']); ?>
       <?php endif; ?>
