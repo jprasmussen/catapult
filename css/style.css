@@ -83,6 +83,41 @@ h3.sg-title {
   background-color: #563d7c;
 }
 
+.messages {
+  background: no-repeat 10px 17px;
+  border: 1px solid;
+  border-width: 1px 1px 1px 0;
+  border-radius: 2px;
+  padding: 15px 20px 15px 35px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 1em;
+}
+
+.messages--status {
+  color: #325e1c;
+  background-color: #f3faef;
+  border-color: #c9e1bd #c9e1bd #c9e1bd transparent;
+  background-image: url(../images/styleguide/check.svg);
+  box-shadow: -8px 0 0 #77b259;
+}
+
+.messages--warning {
+  background-color: #fdf8ed;
+  background-image: url(../images/styleguide/warning.svg);
+  border-color: #f4daa6 #f4daa6 #f4daa6 transparent;
+  color: #734c00;
+  box-shadow: -8px 0 0 #e09600;
+}
+
+.messages--error {
+  background-color: #fcf4f2;
+  color: #a51b00;
+  background-image: url(../images/styleguide/error.svg);
+  border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
+  box-shadow: -8px 0 0 #e62600;
+}
+
 label {
   font-weight: bold;
   display: block;
@@ -109,6 +144,10 @@ label {
 .container-inline div,
 .container-inline label {
   display: inline;
+}
+
+legend {
+  font-weight: bold;
 }
 
 fieldset .form-text {
@@ -436,11 +475,28 @@ h2, h3, h4, h5, h6 {
   padding-bottom: 0.5em;
 }
 
-.element-invisible {
-  visibility: hidden;
-  height: 0;
-  width: 0;
+.element-invisible,
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+.pager__items {
+  clear: both;
+  text-align: center;
+}
+
+.pager__item.is-active {
+  font-weight: bold;
+}
+
+.pager__item {
+  display: inline;
+  padding: 0.5em;
 }
 
 body {

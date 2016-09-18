@@ -72,3 +72,39 @@ h3.sg-title {
     background-color: $color_violet;
   }
 }
+
+
+
+
+// Messages... these styles are provided by Drupal Core.
+.messages {
+    background: no-repeat 10px 17px;
+    border: 1px solid;
+    border-width: 1px 1px 1px 0;
+    border-radius: 2px;
+    padding: 15px 20px 15px 35px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 1em;
+}
+.messages--status {
+    color: #325e1c;
+    background-color: #f3faef;
+    border-color: #c9e1bd #c9e1bd #c9e1bd transparent;
+    background-image: url(../images/styleguide/check.svg);
+    box-shadow: -8px 0 0 #77b259;
+}
+.messages--warning {
+    background-color: #fdf8ed;
+    background-image: url(../images/styleguide/warning.svg);
+    border-color: #f4daa6 #f4daa6 #f4daa6 transparent;
+    color: #734c00;
+    box-shadow: -8px 0 0 #e09600;
+}
+.messages--error {
+    background-color: #fcf4f2;
+    color: #a51b00;
+    background-image: url(../images/styleguide/error.svg);
+    border-color: #f9c9bf #f9c9bf #f9c9bf transparent;
+    box-shadow: -8px 0 0 #e62600;
+}

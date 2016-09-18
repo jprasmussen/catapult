@@ -95,10 +95,26 @@ h2, h3, h4, h5, h6 {
 }
 
 
-.element-invisible {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  overflow: hidden;
+.element-invisible,
+.visually-hidden {
+      position: absolute !important;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
 }
+
+.pager__items {
+    clear: both;
+    text-align: center;
+}
+.pager__item.is-active {
+    font-weight: bold;
+}
+.pager__item {
+    display: inline;
+    padding: 0.5em;
+}
+
 

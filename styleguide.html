@@ -188,102 +188,211 @@
     </dl>
 </section>
 <section class="sg-pattern">
-<h3 class="sg-title">Status Messages</h3>
-    <div class="messages status"><h2 class="element-invisible">Status message</h2>Sed risus orci, auctor et dictum at, hendrerit eu augue.</div>
+    <h3 class="sg-title">Status Messages</h3>
+    <!-- <div class="messages status"><h2 class="element-invisible">Status message</h2>Sed risus orci, auctor et dictum at, hendrerit eu augue.</div>
     <div class="messages warning"><h2 class="element-invisible">Status message</h2>Aenean quis leo sit amet tellus tempus cursus.</div>
-    <div class="messages error"><h2 class="element-invisible">Status message</h2>Praesent ut justo vitae metus luctus vehicula a et purus.</div>
+    <div class="messages error"><h2 class="element-invisible">Status message</h2>Praesent ut justo vitae metus luctus vehicula a et purus.</div> -->
+
+    <div role="contentinfo" aria-label="" class="messages messages--status">
+      This is an Informational status message.
+  </div>
+  <div role="contentinfo" aria-label="" class="messages messages--warning">
+      This is a Warning status message.
+  </div>
+  <div role="contentinfo" aria-label="" class="messages messages--error">
+      <div role="alert">
+        This is an Alert status message.
+    </div>
+</div>
 </section>
+
 <section class="sg-pattern">
+    <h3 class="sg-title">Forms</h3>
 
-
-<form class="styleguide-form" enctype="multipart/form-data" action="#" method="post" id="styleguide-form" accept-charset="UTF-8">
-<div>
-<div class="form-item form-type-select form-item-select">
-  <label for="edit-select">Select </label>
-  <select id="edit-select" name="select" class="form-select"><option value="Sed in lorem">Sed in lorem</option><option value="Nunc id urna">Nunc id urna</option><option value="Dolor tortor et">Dolor tortor et</option><option value="Urna amet convallis">Urna amet convallis</option><option value="Pellentesque enim consectetur">Pellentesque enim consectetur</option></select>
-  <div class="description">Aliquam dui dolor, ullamcorper eget rutrum ut, hendrerit ac lorem.</div>
-</div>
-<div class="form-item form-type-checkbox form-item-checkbox">
- <input type="checkbox" id="edit-checkbox" name="checkbox" value="1" checked="checked" class="form-checkbox">  <label class="option" for="edit-checkbox">Checkbox </label>
-
- <div class="description">Donec magna est, sollicitudin vel ultrices vel, mattis ut odio.</div>
-</div>
-<div class="form-item form-type-checkboxes form-item-checkboxes">
-  <label for="edit-checkboxes">Checkboxes </label>
-  <div id="edit-checkboxes" class="form-checkboxes"><div class="form-item form-type-checkbox form-item-checkboxes-Sed-in-lorem">
-   <input type="checkbox" id="edit-checkboxes-sed-in-lorem" name="checkboxes[Sed in lorem]" value="Sed in lorem" class="form-checkbox">  <label class="option" for="edit-checkboxes-sed-in-lorem">Sed in lorem </label>
-
- </div>
- <div class="form-item form-type-checkbox form-item-checkboxes-Nunc-id-urna">
-   <input type="checkbox" id="edit-checkboxes-nunc-id-urna" name="checkboxes[Nunc id urna]" value="Nunc id urna" class="form-checkbox">  <label class="option" for="edit-checkboxes-nunc-id-urna">Nunc id urna </label>
-
- </div>
- <div class="form-item form-type-checkbox form-item-checkboxes-Dolor-tortor-et">
-   <input type="checkbox" id="edit-checkboxes-dolor-tortor-et" name="checkboxes[Dolor tortor et]" value="Dolor tortor et" class="form-checkbox">  <label class="option" for="edit-checkboxes-dolor-tortor-et">Dolor tortor et </label>
-
- </div>
- <div class="form-item form-type-checkbox form-item-checkboxes-Urna-amet-convallis">
-   <input type="checkbox" id="edit-checkboxes-urna-amet-convallis" name="checkboxes[Urna amet convallis]" value="Urna amet convallis" class="form-checkbox">  <label class="option" for="edit-checkboxes-urna-amet-convallis">Urna amet convallis </label>
-
- </div>
- <div class="form-item form-type-checkbox form-item-checkboxes-Pellentesque-enim-consectetur">
-   <input type="checkbox" id="edit-checkboxes-pellentesque-enim-consectetur" name="checkboxes[Pellentesque enim consectetur]" value="Pellentesque enim consectetur" class="form-checkbox">  <label class="option" for="edit-checkboxes-pellentesque-enim-consectetur">Pellentesque enim consectetur </label>
-
- </div>
-</div>
-<div class="description">Aenean quis leo sit amet tellus tempus cursus.</div>
-</div>
-<div class="form-item form-type-radios form-item-radios">
-  <label for="edit-radios">Radios </label>
-  <div id="edit-radios" class="form-radios"><div class="form-item form-type-radio form-item-radios">
-   <input type="radio" id="edit-radios-sed-in-lorem" name="radios" value="Sed in lorem" class="form-radio">  <label class="option" for="edit-radios-sed-in-lorem">Sed in lorem </label>
-
- </div>
- <div class="form-item form-type-radio form-item-radios">
-   <input type="radio" id="edit-radios-nunc-id-urna" name="radios" value="Nunc id urna" class="form-radio">  <label class="option" for="edit-radios-nunc-id-urna">Nunc id urna </label>
-
- </div>
- <div class="form-item form-type-radio form-item-radios">
-   <input type="radio" id="edit-radios-dolor-tortor-et" name="radios" value="Dolor tortor et" class="form-radio">  <label class="option" for="edit-radios-dolor-tortor-et">Dolor tortor et </label>
-
- </div>
- <div class="form-item form-type-radio form-item-radios">
-   <input type="radio" id="edit-radios-urna-amet-convallis" name="radios" value="Urna amet convallis" class="form-radio">  <label class="option" for="edit-radios-urna-amet-convallis">Urna amet convallis </label>
-
- </div>
- <div class="form-item form-type-radio form-item-radios">
-   <input type="radio" id="edit-radios-pellentesque-enim-consectetur" name="radios" value="Pellentesque enim consectetur" class="form-radio">  <label class="option" for="edit-radios-pellentesque-enim-consectetur">Pellentesque enim consectetur </label>
-
- </div>
-</div>
-<div class="description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
-</div>
-<div class="form-item form-type-textfield form-item-textfield">
-  <label for="edit-textfield">Textfield </label>
-  <input type="text" id="edit-textfield" name="textfield" value="Viverra malesuada eros" size="60" maxlength="128" class="form-text">
-  <div class="description">Suspendisse lectus erat, commodo nec fringilla quis, interdum non leo.</div>
+    <div class="js-form-item form-item js-form-type-select form-type-select js-form-item-select form-item-select">
+      <label for="edit-select--2">Select</label>
+      <select data-drupal-selector="edit-select" aria-describedby="edit-select--2--description" id="edit-select--2" name="select" class="form-select">
+      <option value="item 1">item 1</option>
+      <option value="item 2">item 2</option>
+      <option value="item 3">item 3</option>
+      <option value="item 4">item 4</option>
+      <option value="item 5">item 5</option></select>
+      <div id="edit-select--2--description" class="description">
+        Form select description/help text.
+    </div>
 </div>
 
-  <div class="form-item form-type-textarea form-item-textarea">
-    <label for="edit-textarea">Textarea </label>
-    <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea id="edit-textarea" name="textarea" cols="60" rows="5" class="form-textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis, velit gravida convallis tincidunt, felis enim venenatis lorem, nec lobortis nisl urna et mi. Pellentesque ac dictum ante. Fusce dignissim tempor elementum. Ut dignissim convallis eros, viverra luctus lacus consequat ac. Sed feugiat velit sed magna aliquam accumsan. Nam vitae porta tortor. Nam auctor dui a neque iaculis in aliquam erat viverra. Duis orci nunc, lacinia in malesuada et, euismod id turpis. Cras mattis vulputate erat, eget tempor magna egestas eu. Vestibulum sit amet massa est.</textarea><div class="grippie"></div></div>
-    <div class="description">Nulla non nulla nec metus rhoncus congue.</div>
+<div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkbox form-item-checkbox">
+  <input data-drupal-selector="edit-checkbox" aria-describedby="edit-checkbox--2--description" type="checkbox" id="edit-checkbox--2" name="checkbox" value="1" checked="checked" class="form-checkbox">
+
+  <label for="edit-checkbox--2" class="option">Checkbox</label>
+  <div id="edit-checkbox--2--description" class="description">
+    Single checkbox description/help text.
+</div>
+</div>
+
+<fieldset data-drupal-selector="edit-checkboxes" aria-describedby="edit-checkboxes--2--wrapper--description" id="edit-checkboxes--2--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
+  <legend>
+    <span class="fieldset-legend">Checkboxes</span>
+</legend>
+<div class="fieldset-wrapper">
+    <div id="edit-checkboxes--2" class="form-checkboxes">
+        <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkboxes-tetavu-chaclispo-voshidri form-item-checkboxes-tetavu-chaclispo-voshidri">
+          <input data-drupal-selector="edit-checkboxes-tetavu-chaclispo-voshidri" aria-describedby="edit-checkboxes--2--description" type="checkbox" id="edit-checkboxes-tetavu-chaclispo-voshidri" name="checkboxes[checkbox 1]" value="checkbox 1" class="form-checkbox">
+
+          <label for="edit-checkboxes-tetavu-chaclispo-voshidri" class="option">checkbox 1</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkboxes-swosw-rost-redr form-item-checkboxes-swosw-rost-redr">
+          <input data-drupal-selector="edit-checkboxes-swosw-rost-redr" aria-describedby="edit-checkboxes--2--description" type="checkbox" id="edit-checkboxes-swosw-rost-redr" name="checkboxes[checkbox 2]" value="checkbox 2" class="form-checkbox">
+
+          <label for="edit-checkboxes-swosw-rost-redr" class="option">checkbox 2</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkboxes-swite-rawroslech-dromi form-item-checkboxes-swite-rawroslech-dromi">
+          <input data-drupal-selector="edit-checkboxes-swite-rawroslech-dromi" aria-describedby="edit-checkboxes--2--description" type="checkbox" id="edit-checkboxes-swite-rawroslech-dromi" name="checkboxes[checkbox 3]" value="checkbox 3" class="form-checkbox">
+
+          <label for="edit-checkboxes-swite-rawroslech-dromi" class="option">checkbox 3</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkboxes-diclidrof-luteshatramu-prirolib form-item-checkboxes-diclidrof-luteshatramu-prirolib">
+          <input data-drupal-selector="edit-checkboxes-diclidrof-luteshatramu-prirolib" aria-describedby="edit-checkboxes--2--description" type="checkbox" id="edit-checkboxes-diclidrof-luteshatramu-prirolib" name="checkboxes[checkbox 4]" value="checkbox 4" class="form-checkbox">
+
+          <label for="edit-checkboxes-diclidrof-luteshatramu-prirolib" class="option">checkbox 4</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-checkboxes-writrakekawr-tucucl-fruthigopha form-item-checkboxes-writrakekawr-tucucl-fruthigopha">
+          <input data-drupal-selector="edit-checkboxes-writrakekawr-tucucl-fruthigopha" aria-describedby="edit-checkboxes--2--description" type="checkbox" id="edit-checkboxes-writrakekawr-tucucl-fruthigopha" name="checkboxes[checkbox 5]" value="checkbox 5" class="form-checkbox">
+
+          <label for="edit-checkboxes-writrakekawr-tucucl-fruthigopha" class="option">checkbox 5</label>
+      </div>
   </div>
 
+  <div id="edit-checkboxes--2--wrapper--description" class="description">Checkbox list description/help text.</div>
+</div>
+</fieldset>
 
-<div id="edit-managed-file-ajax-wrapper"><div class="form-item form-type-managed-file form-item-managed-file">
-  <label for="edit-managed-file-upload">Managed file </label>
-  <div id="edit-managed-file-upload" class="form-managed-file"><input type="file" id="edit-managed-file-upload" name="files[managed_file]" size="22" class="form-file"><input type="submit" id="edit-managed-file-upload-button" name="managed_file_upload_button" value="Upload" class="form-submit ajax-processed"><input type="hidden" name="managed_file[fid]" value="0">
+<fieldset data-drupal-selector="edit-radios" aria-describedby="edit-radios--2--wrapper--description" id="edit-radios--2--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
+  <legend>
+    <span class="fieldset-legend">Radios</span>
+</legend>
+<div class="fieldset-wrapper">
+    <div id="edit-radios--2" class="form-radios">
+        <div class="js-form-item form-item js-form-type-radio form-type-radio js-form-item-radios form-item-radios">
+          <input data-drupal-selector="edit-radios-tetavu-chaclispo-voshidri" aria-describedby="edit-radios--2--description" type="radio" id="edit-radios-tetavu-chaclispo-voshidri" name="radios" value="radio 1" class="form-radio">
+
+          <label for="edit-radios-tetavu-chaclispo-voshidri" class="option">radio 1</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-radio form-type-radio js-form-item-radios form-item-radios">
+          <input data-drupal-selector="edit-radios-swosw-rost-redr" aria-describedby="edit-radios--2--description" type="radio" id="edit-radios-swosw-rost-redr" name="radios" value="radio 2" class="form-radio">
+
+          <label for="edit-radios-swosw-rost-redr" class="option">radio 2</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-radio form-type-radio js-form-item-radios form-item-radios">
+          <input data-drupal-selector="edit-radios-swite-rawroslech-dromi" aria-describedby="edit-radios--2--description" type="radio" id="edit-radios-swite-rawroslech-dromi" name="radios" value="radio 3" class="form-radio">
+
+          <label for="edit-radios-swite-rawroslech-dromi" class="option">radio 3</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-radio form-type-radio js-form-item-radios form-item-radios">
+          <input data-drupal-selector="edit-radios-diclidrof-luteshatramu-prirolib" aria-describedby="edit-radios--2--description" type="radio" id="edit-radios-diclidrof-luteshatramu-prirolib" name="radios" value="radio 4" class="form-radio">
+
+          <label for="edit-radios-diclidrof-luteshatramu-prirolib" class="option">radio 4</label>
+      </div>
+      <div class="js-form-item form-item js-form-type-radio form-type-radio js-form-item-radios form-item-radios">
+          <input data-drupal-selector="edit-radios-writrakekawr-tucucl-fruthigopha" aria-describedby="edit-radios--2--description" type="radio" id="edit-radios-writrakekawr-tucucl-fruthigopha" name="radios" value="radio 5" class="form-radio">
+
+          <label for="edit-radios-writrakekawr-tucucl-fruthigopha" class="option">radio 5</label>
+      </div>
   </div>
-  <div class="description">Donec erat arcu, ultrices sit amet placerat non, feugiat in arcu.</div>
+
+  <div id="edit-radios--2--wrapper--description" class="description">Radio list description/help text.</div>
+</div>
+</fieldset>
+
+<div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-textfield form-item-textfield">
+  <label for="edit-textfield--2">Textfield</label>
+  <input data-drupal-selector="edit-textfield" aria-describedby="edit-textfield--2--description" type="text" id="edit-textfield--2" name="textfield" value="Kucrarigohi temi shalidusla" size="60" maxlength="128" class="form-text">
+
+  <div id="edit-textfield--2--description" class="description">
+    Textfield description/help text.
 </div>
 </div>
-<input type="hidden" name="form_id" value="styleguide_form">
-</div></form>
+
+<div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-textarea form-item-textarea">
+  <label for="edit-textarea--2">Textarea</label>
+  <div class="form-textarea-wrapper">
+    <textarea data-drupal-selector="edit-textarea" aria-describedby="edit-textarea--2--description" id="edit-textarea--2" name="textarea" rows="5" cols="60" class="form-textarea resize-vertical">Abdo adipiscing amet imputo lenis os tego. Defui dolor ibidem iustum tincidunt ullamcorper. Capto facilisi gravis iaceo iriure probo quadrum ut utinam uxor. Dolor fere tego. Adipiscing dignissim eros interdico laoreet neque valde vindico vulpes. Consectetuer jumentum olim volutpat. Amet capto damnum dolor in scisco secundum suscipere typicus.
+      Gemino obruo saluto. Aliquip erat eum laoreet nibh pertineo probo venio. Mos natu suscipit. Praemitto praesent validus volutpat. Diam eros quidne torqueo ut vulputate. Autem camur enim pertineo quadrum qui roto suscipit validus. Accumsan metuo nisl quae. Brevitas erat importunus sit. Accumsan cui eros facilisis hendrerit jus luctus macto quibus. Cogo huic natu occuro sudo vereor. Abigo aptent dolus gravis interdico jus loquor refero tego veniam.
+      Iaceo iusto roto sagaciter. Accumsan appellatio damnum diam elit enim nisl olim tincidunt voco. Commoveo hendrerit molior os pagus quidne sino. Exerci odio patria praemitto. Abigo ille mos quis rusticus secundum torqueo velit vereor vulpes.
+      Ad lucidus mos praesent sudo tamen tum valetudo verto virtus. Importunus nobis valetudo. Brevitas commodo dolus iusto jugis occuro suscipit utrum validus voco. Esca illum in quadrum sed.
+      Augue diam macto nulla scisco. Commoveo cui dolore interdico macto secundum suscipere vulpes. Populus quia validus. Eum vel vereor. Abdo facilisi vel. Accumsan facilisis interdico iriure molior praesent suscipit. Abico ad iaceo importunus inhibeo obruo tincidunt. Aptent dolor et incassum pneum quidem. Antehabeo obruo quidne refoveo. Consectetuer dignissim ille meus veniam. Abluo accumsan aliquip antehabeo aptent augue illum immitto melior.
+  </textarea>
+</div>
+
+<div id="edit-textarea--2--description" class="description">
+    Textarea description/help text.
+</div>
+</div>
 </section>
-<section class="sg-pattern"></section>
-<section class="sg-pattern"></section>
-<section class="sg-pattern"></section>
+
+<section class="sg-pattern">
+    <h3 class="sg-title">Buttons</h3>
+    <p><strong>Submit Button</strong></p>
+    <form data-drupal-selector="styleguide-form-3" action="#" method="post" id="styleguide-form--3" accept-charset="UTF-8" data-drupal-form-fields="edit-submit--2">
+      <input data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" name="op" value="Submit" class="button js-form-submit form-submit">
+      <input data-drupal-selector="form-fbuybroxrogc94e-gnfselp9uhnbdkuip56q4pfspra" type="hidden" name="form_build_id" value="form-FBUybroXrOGc94e-GNFseLp9UhNbDkuip56q4pFsPrA">
+      <input data-drupal-selector="edit-styleguide-form-form-token-3" type="hidden" name="form_token" value="R96ZKdkMdDUeTAcwC8IdgKfJwVKw0uNsS7g18MVUfu0">
+      <input data-drupal-selector="edit-styleguide-form-3" type="hidden" name="form_id" value="styleguide_form">
+  </form>
+  <p></p>
+
+  <p><strong>Confirmation Form</strong></p>
+  <form class="styleguide-confirm-form confirmation" data-drupal-selector="styleguide-confirm-form" action="#" method="post" id="styleguide-confirm-form" accept-charset="UTF-8" data-drupal-form-fields="edit-submit--3">
+    <input data-drupal-selector="edit-confirm" type="hidden" name="confirm" value="1">
+    <input data-drupal-selector="form-huvv0mhuogs3kyhe5aafibxzhh6iax64f2o4pw7uhle" type="hidden" name="form_build_id" value="form-huVv0mhuOgS3kYhE5AAFibXZHH6iAx64f2o4pW7uhLE">
+    <input data-drupal-selector="edit-styleguide-confirm-form-form-token" type="hidden" name="form_token" value="1BAgOoDgV7fZRP-sZl32qIZwMcNH_tqIY9B1CAf3nR4">
+    <input data-drupal-selector="edit-styleguide-confirm-form" type="hidden" name="form_id" value="styleguide_confirm_form">
+    <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit--3" name="op" value="Confirm" class="button button--primary js-form-submit form-submit">
+        <a href="#" class="button" data-drupal-selector="edit-cancel" id="edit-cancel">Cancel</a></div>
+    </form>
+
+</section>
+
+
+<section class="sg-pattern">
+    <h3 class="sg-title">Pager</h3>
+    <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
+        <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+        <ul class="pager__items js-pager__items">
+            <li class="pager__item is-active">
+               <a href="?q=admin%2Fappearance%2Fstyleguide&amp;page=0" title="Current page">
+                <span class="visually-hidden">
+                  Current page
+              </span>1</a>
+          </li>
+          <li class="pager__item">
+              <a href="?q=admin%2Fappearance%2Fstyleguide&amp;page=1" title="Go to page 2">
+                <span class="visually-hidden">
+                  Page
+              </span>2</a>
+          </li>
+          <li class="pager__item">
+              <a href="?q=admin%2Fappearance%2Fstyleguide&amp;page=2" title="Go to page 3">
+                <span class="visually-hidden">
+                  Page
+              </span>3</a>
+          </li>
+          <li class="pager__item pager__item--next">
+              <a href="?q=admin%2Fappearance%2Fstyleguide&amp;page=1" title="Go to next page" rel="next">
+                <span class="visually-hidden">Next page</span>
+                <span aria-hidden="true">Next ›</span>
+            </a>
+        </li>
+        <li class="pager__item pager__item--last">
+          <a href="?q=admin%2Fappearance%2Fstyleguide&amp;page=2" title="Go to last page">
+            <span class="visually-hidden">Last page</span>
+            <span aria-hidden="true">Last »</span>
+        </a>
+    </li>
+</ul>
+</nav>
+</section>
 <section class="sg-pattern"></section>
 <section class="sg-pattern"></section>
 <section class="sg-pattern"></section>
