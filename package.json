@@ -26,7 +26,9 @@
     "node-sass-import-once": "^1.2.0",
     "sass-lint": "^1.7.0",
     "support-for": "^1.0.6",
-    "typey": "^1.0.0"
+    "typey": "^1.0.0",
+    "breakpoint-sass": "~2.7.0",
+    "susy": "^2.2.12"
   },
   "private": true,
   "scripts": {

@@ -1,0 +1,74 @@
+#styleguide body {
+  background-color: #fff;
+}
+
+.sg-pattern {
+  padding: ($vspace * 5) $hspace;
+}
+
+h3.sg-title {
+  border-bottom: solid 1px $border_color;
+  color: $color_gray;
+  margin-bottom: $vspace;
+  padding-bottom: 0.25em;
+  line-height: 1em;
+}
+
+#styleguide .layout-content,
+#styleguide .layout-sidebar-first,
+#styleguide .layout-sidebar-second, {
+  background-color: $color_gray;
+  height: 250px;
+  margin-bottom: 1em;
+  color: #fff;
+  padding: $vspace $hspace;
+}
+.color-palette {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      padding: 5px;
+      margin: 10px;
+      flex: 1 1 auto;
+      border: solid 1px $border_color;
+      border-radius: 5px;
+      span {
+        display: block;
+        border: solid 1px $border_color;
+        border-radius: 5px;
+        height: 100px;
+        // &:after {
+        //   content: "Color";
+        // }
+      }
+    }
+  }
+  .color-1 span {
+    background-color: $color_red;
+  }
+  .color-2 span {
+    background-color: $color_orange;
+  }
+  .color-3 span {
+    background-color: $color_yellow;
+  }
+  .color-4 span {
+    background-color: $color_green;
+  }
+  .color-5 span {
+    background-color: $color_blue;
+  }
+  .color-6 span {
+    background-color: $color_indigo;
+  }
+  .color-7 span {
+    background-color: $color_violet;
+  }
+}

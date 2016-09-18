@@ -1,4 +1,29 @@
-label {}
+label {
+	font-weight: bold;
+	display: block;
+}
+
+.form-type-checkbox label,
+.form-type-radio label {
+	font-weight: normal;
+	display: inline-block;
+}
+
+.form-item .description {
+	font-style: italic;
+}
+
+.form-item {
+	margin-bottom: 1em;
+}
+
+.form-item .form-item  {
+	margin-bottom: 0;
+}
+.container-inline div,
+.container-inline label {
+	display: inline;
+}
 
 legend {}
 

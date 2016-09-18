@@ -2,6 +2,7 @@
 .layout-main,
 .layout-footer {
   @include clearfix();
+  @include container;
 }
 
 @include breakpoint($xsmall) {}
@@ -9,6 +10,39 @@
 @include breakpoint($small) {}
 
 @include breakpoint($medium) {
+  .two-sidebars {
+    .layout-content {
+      @include span(isolate 6 at 4);
+    }
+    .layout-sidebar-first {
+      @include span(3);
+    }
+    .layout-sidebar-second {
+      @include span(last 3);
+    }
+  }
+  .one-sidebar.has-sidebar-first {
+    .layout-content {
+      @include span(last 9);
+    }
+    .layout-sidebar-first {
+      @include span(3);
+    }
+    .layout-sidebar-second {
+      @include span(last 3);
+    }
+  }
+
+  .one-sidebar.has-sidebar-second {
+    .layout-content {
+      @include span(9);
+    }
+    .layout-sidebar-second {
+      @include span(last 3);
+    }
+  }
+
+
   .region-branding {
     @include span(6);
   }
