@@ -2,6 +2,11 @@
 // Gloabl Vars.
 // ------------------------------------
 
+// Messages and feedback colors.
+$error: red;
+$warning: yellow;
+$information: green;
+
 
 // Body/HTML Settings.
 $body_font: 'Open Sans', sans-serif; // Default font.
@@ -17,28 +22,35 @@ $title_fontcolor: $blue; // This is for the H1.
 $heading_font: $title_font; // This is for the rest of the headings.
 $heading_fontcolor: $title_fontcolor; // darken($blue, 3%); // This is for the rest of the headings.
 
-// Butons and Links.
+
+// Butons.
 $button_bg_color: $gold;
 $button_fontcolor: $body_fontcolor;
 $button_radius: 0;
 
+
+// Gloabl Links.
 $link: $blue; // Default link color.
 $link_hover: $orange; // Default link hover.
 $link_active: $blue; // Default link active and focus color.
 
+
+// Footer Links.
 $footer_link: #ffffff; // Footer link color.
 $footer_link_hover: $red; // Footer link hover.
 $footer_link_active: $orange; // Footer link color.
 
-// Menus.
+
+// Menu colors, mostly for the primary navigation.
 $menu: #ffffff; // Primary navigation color.
 $menu_hover: $blue; // Primary navigation hover.
 $menu_active: $menu_hover; // Primary navigation active and focus color.
 
+
+// Primary naviation bg colors and font settings.
 $menu_bg: transparent; // Primary navigation background.
 $menu_bg_hover: $green; // Primary navigation hover background.
 $menu_bg_active: $menu_bg_hover; // Primary navigation active and focus background.
-
 $menu_font: null ; // Font used for primary navigation.
 $menu_font_weight: 400;
 
@@ -48,6 +60,9 @@ $header_bg:	#ffffff;
 $header_font: null;
 $header_fontcolor: $blue;
 
+$vspace: 20px; // Vertical spacing unit.
+$hspace: 20px; // Horizontal spacing unit.
+
 $main_bg: null; // The main content aera.
 
 $footer_color: $blue; // Font color.
@@ -55,13 +70,14 @@ $footer_bg: $ltblue; // Background color.
 $footer_size: 0.8em; // Text size.
 
 
+// Tables.
+$table_cell_padding: 10px;
+$row_even: $smoke; // Table even row styles
+$row_odd: transparent; // Table odd row styles
+$table_header: $row_even; // Table header row styles
 
-// Misc stuff.
-$border_color: $gray; // Gloabl border color.
 
-$vspace: 20px; // Vertical spacing unit.
-$hspace: 20px; // Horizontal spacing unit.
-
+// Local tasks and Tabs.
 $tabs_primary_text: $white;
 $tabs_primary_text_active: $white;
 
@@ -75,7 +91,5 @@ $tabs_secondary_bg: $blue;
 $tabs_secondary_bg_active: $ltblue;
 
 
-// Tables.
-$row_even: $smoke; // lighten($blue, 30%) Table even row styles
-$row_odd: transparent; // Table odd row styles
-$table_header: $row_even; // Table header row styles
+// Misc stuff.
+$border_color: $gray; // Gloabl border color.

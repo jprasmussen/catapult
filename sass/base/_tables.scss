@@ -3,6 +3,7 @@ table {
 }
 
 td, th {
+  padding: $table_cell_padding;
 }
 
 th {
@@ -10,10 +11,12 @@ th {
 }
 
 tr {
-	&.even {
+	&.even,
+  &:nth-child(even) {
     background-color: $row_even;
 	}
-	&.odd {
+	&.odd,
+  &:nth-child(odd) {
     background-color: $row_odd;
 	}
 }
