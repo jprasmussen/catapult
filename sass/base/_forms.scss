@@ -1,32 +1,41 @@
+label {}
 
-fieldset {
+legend {}
 
-	.form-text {
-		width: 100%;
-	}
-}
+fieldset {}
 
-.form-text {
-	padding: 3px;
-}
+fieldset .form-text { width: 100%; }
 
-legend {
-
-}
-
-
-.form-submit,
-button,
-.button,
-.more {
-	@include button;
-}
+input, textarea {}
 
 select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	padding: 4px 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.3em;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.form-text, .form-textarea {
+	border: 1px solid $border_color;
+	padding: 4px;
+}
+
+button,
+.form-submit,
+.button,
+.nested-button a {
+	@include button;
 }
 
 // Fixing table draggers.
