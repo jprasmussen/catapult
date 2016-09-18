@@ -5,6 +5,20 @@ body {
   color: $body_fontcolor;
 }
 
+p {
+  margin-bottom: 0.5em;
+}
+
+strong {}
+
+em {}
+
+ul, ol {}
+
+figure {}
+
+caption {}
+
 // @TODO Include Typey https://github.com/jptaranto/typey.
 h1 {
   color: $title_fontcolor;
@@ -43,9 +57,4 @@ h2, h3, h4, h5, h6 {
 footer a {
 }
 
-ul, ol {
-}
 
-p {
-  padding-bottom: 0.5em;
-}

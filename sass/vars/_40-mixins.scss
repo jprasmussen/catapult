@@ -4,6 +4,19 @@
 // 	@include background-image(linear-gradient($direction, $color1 0%, $color2 100%));
 // }
 
+// Cleafix magic.
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
 // Button Maker.
 @mixin button($color: $button_bg_color, $text: $button_fontcolor, $radius: $button_radius) {
   color: $text !important; // overrides the text color in anchor tags.
@@ -57,6 +70,7 @@
     color: $active;
   }
 }
+
 @mixin linkmebg($bg: transparent, $bghover: transparent, $bgactive: transparent) {
   &:link,
   &:visited {
