@@ -78,7 +78,7 @@
  * @see template_process()
  */
 ?>
-<article<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
     <header>
       <?php print render($title_prefix); ?>
