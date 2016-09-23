@@ -181,7 +181,7 @@ button,
 .form-submit,
 .button,
 .nested-button a {
-  color: #333333 !important;
+  color: #fff !important;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -196,7 +196,7 @@ button,
   display: inline-block;
   border-radius: 0;
   background-clip: padding-box;
-  background-color: #C2531A;
+  background-color: #428bca;
 }
 
 button:link, button:visited,
@@ -206,7 +206,7 @@ button:link, button:visited,
 .button:visited,
 .nested-button a:link,
 .nested-button a:visited {
-  background-color: #C2531A;
+  background-color: #428bca;
 }
 
 button:hover, button:focus, button:active,
@@ -219,7 +219,7 @@ button:hover, button:focus, button:active,
 .nested-button a:hover,
 .nested-button a:focus,
 .nested-button a:active {
-  background-color: #d85d1d;
+  background-color: #5697d0;
 }
 
 a.tabledrag-handle {
