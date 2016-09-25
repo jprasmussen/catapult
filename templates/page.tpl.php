@@ -136,8 +136,8 @@
     <?php print render($page['footer']); ?>
     </div>
 
-    <?php if ($page['footer_a'] || $page['footer_b'] || $page['footer_c']): ?>
-    <div class="container secondary">
+    <?php if ($page['footer_a'] || $page['footer_b'] || $page['footer_c'] || $page['footer_d']): ?>
+    <div class="container footer-secondary">
       <?php if ($page['footer_a']): ?>
         <?php print render($page['footer_a']); ?>
       <?php endif; ?>
@@ -146,6 +146,9 @@
       <?php endif; ?>
       <?php if ($page['footer_c']): ?>
         <?php print render($page['footer_c']); ?>
+      <?php endif; ?>
+      <?php if ($page['footer_d']): ?>
+        <?php print render($page['footer_d']); ?>
       <?php endif; ?>
     </div>
   <?php endif; ?>

@@ -85,7 +85,8 @@ function catapult_breadcrumb($variables) {
      $output = '';
 
      if (!empty($variables['primary'])) {
-       $variables['primary']['#prefix'] = '<div class="tabs--primary-wrapper"><span class="tabs--primary-toggle"><span class="icon"></span>' . t('Manage') . '</span>';
+       // $variables['primary']['#prefix'] = '<div class="tabs--primary-wrapper"><span class="tabs--primary-toggle"><span class="icon"></span>' . t('Manage') . '</span>';
+       $variables['primary']['#prefix'] = '<div class="tabs--primary-wrapper">';
        $variables['primary']['#prefix'] .= '<ul class="tabs--primary">';
        $variables['primary']['#suffix'] = '</ul></div>';
        $output .= drupal_render($variables['primary']);

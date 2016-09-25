@@ -5,56 +5,91 @@ body {
   color: $body_fontcolor;
 }
 
-p {
-  margin-bottom: 0.5em;
+a {
+  @include linkme;
 }
 
-strong {}
+strong, b {
+  font-weight: bold;
+}
 
-em {}
+ul, ol {
+}
 
-ul, ol {}
-
-figure {}
-
-caption {}
+p {
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
+}
 
 // @TODO Include Typey https://github.com/jptaranto/typey.
 h1 {
   color: $title_fontcolor;
   font-family: $title_font;
-  font-size: 2.5em;
-  font-weight: 500;
+  font-size: 1.75em;
+  font-weight: $title_fontweight;
   line-height: 1em;
-
+  margin-bottom: 0.55em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
-}
-
-h4 {
   font-size: 1.25em;
 }
 
-h5, h6 {
+h4, h5, h6 {
   font-size: 1em;
 }
 
 h2, h3, h4, h5, h6 {
   color: $heading_fontcolor;
-  font: $heading_fontcolor;
-  margin-bottom: 0.25em;
+  font-family: $heading_fontcolor;
+  font-weight: $heading_fontweight;
+  line-height: 1em;
+  a {
+    @include linkme($title_fontcolor);
+  }
 }
 
 
-
 footer a {
+  @include linkme($footer_link, $footer_link_hover, $footer_link_active);
+}
+
+.item-list ul.pager {
+  margin: 10px 0;
+  li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-color: #fff;
+    &.pager-current {
+      background-color: $link_hover;
+      color: #fff;
+      padding: 8px 15px;
+    }
+    &:hover {
+      background-color: $link_hover;
+      color: #fff;
+    }
+  }
+
+  li a {
+    padding: 8px 15px;
+    display: inline-block;
+    &:link,
+    &:visited {
+      color: $link_hover;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+    }
+  }
 }
 
 

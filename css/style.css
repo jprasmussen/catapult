@@ -3,15 +3,34 @@ fieldset .form-text {
   width: 100%;
 }
 
-.form-text {
-  padding: 3px;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 4px 10px;
 }
 
-.form-submit,
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3em;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.form-text, .form-textarea {
+  border: 1px solid #555;
+  padding: 4px;
+}
+
 button,
+.form-submit,
 .button,
-.more {
-  color: dkgray !important;
+.nested-button a {
+  color: #ffffff !important;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -26,37 +45,30 @@ button,
   display: inline-block;
   border-radius: 0;
   background-clip: padding-box;
-  background-color: #bca830;
+  background-color: #50B0C9;
 }
 
-.form-submit:link, .form-submit:visited,
-button:link,
-button:visited,
+button:link, button:visited,
+.form-submit:link,
+.form-submit:visited,
 .button:link,
 .button:visited,
-.more:link,
-.more:visited {
-  background-color: #bca830;
+.nested-button a:link,
+.nested-button a:visited {
+  background-color: #50B0C9;
 }
 
-.form-submit:hover, .form-submit:focus, .form-submit:active,
-button:hover,
-button:focus,
-button:active,
+button:hover, button:focus, button:active,
+.form-submit:hover,
+.form-submit:focus,
+.form-submit:active,
 .button:hover,
 .button:focus,
 .button:active,
-.more:hover,
-.more:focus,
-.more:active {
-  background-color: #ccb739;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 4px 10px;
+.nested-button a:hover,
+.nested-button a:focus,
+.nested-button a:active {
+  background-color: #63b9cf;
 }
 
 a.tabledrag-handle {
@@ -79,12 +91,6 @@ a.tabledrag-handle .handle {
   padding-top: 20px;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 .l-header:before, .l-header:after,
 .l-main:before,
 .l-main:after,
@@ -101,13 +107,49 @@ a.tabledrag-handle .handle {
 }
 
 @media (min-width: 768px) {
-  .l-branding {
+  .two-sidebars .l-content {
     width: 49.15254%;
+    float: left;
+    margin-left: 25.42373%;
+    margin-right: -100%;
+  }
+  .two-sidebars .region-sidebar-first {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  .two-sidebars .region-sidebar-second {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+  .one-sidebar.sidebar-first .l-content {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+  }
+  .one-sidebar.sidebar-first .region-sidebar-first {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  .one-sidebar.sidebar-second .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  .one-sidebar.sidebar-second .region-sidebar-second {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+  }
+  .l-branding {
+    width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
   .region-navigation {
-    width: 49.15254%;
+    width: 74.57627%;
     float: right;
     margin-right: 0;
   }
@@ -117,25 +159,39 @@ a.tabledrag-handle .handle {
     margin-left: 0;
     margin-right: 0;
   }
-  .l-subfooter:before, .l-subfooter:after {
-    content: "";
-    display: table;
+  .l-footer .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .l-subfooter:after {
+  .l-footer .container:after {
+    content: " ";
+    display: block;
     clear: both;
   }
+  .region-footer {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .region-footer-a {
-    width: 32.20339%;
+    width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
   .region-footer-b {
-    width: 32.20339%;
+    width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
   .region-footer-c {
-    width: 32.20339%;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+  .region-footer-d {
+    width: 23.72881%;
     float: right;
     margin-right: 0;
   }
@@ -150,41 +206,148 @@ table {
   width: 100%;
 }
 
+td, th {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #f5f5f5;
+  vertical-align: bottom;
+}
+
+table.table-hover tr:nth-child(even):hover td {
+  background-color: #ededed;
+}
+
+table.table-hover tr:nth-child(odd):hover td {
+  background-color: transparent;
+}
+
+tr.even, tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tr.odd, tr:nth-child(odd) {
+  background-color: transparent;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  color: dkgray;
+  color: #333333;
+}
+
+a:link, a:visited {
+  color: #0F7A96;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #C2531A;
+}
+
+a:active, a.active {
+  color: #0F7A96;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.75em;
+  line-height: 1.5em;
 }
 
 h1 {
-  color: #006341;
-  font-size: 2.5em;
-  font-weight: 500;
+  color: #555;
+  font-size: 1.75em;
+  font-weight: 300;
   line-height: 1em;
+  margin-bottom: 0.55em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
-}
-
-h4 {
   font-size: 1.25em;
 }
 
-h5, h6 {
+h4, h5, h6 {
   font-size: 1em;
 }
 
 h2, h3, h4, h5, h6 {
-  color: #006341;
-  font: #006341;
-  margin-bottom: 0.25em;
+  color: #555;
+  font-family: #555;
+  font-weight: 300;
+  line-height: 1em;
+}
+
+h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus {
+  color: #C2531A;
+}
+
+h2 a:active, h2 a.active, h3 a:active, h3 a.active, h4 a:active, h4 a.active, h5 a:active, h5 a.active, h6 a:active, h6 a.active {
+  color: #0F7A96;
+}
+
+footer a:link, footer a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+  color: #b61f28;
+}
+
+footer a:active, footer a.active {
+  color: #C2531A;
+}
+
+.item-list ul.pager {
+  margin: 10px 0;
+}
+
+.item-list ul.pager li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.item-list ul.pager li.pager-current {
+  background-color: #C2531A;
+  color: #fff;
+  padding: 8px 15px;
+}
+
+.item-list ul.pager li:hover {
+  background-color: #C2531A;
+  color: #fff;
+}
+
+.item-list ul.pager li a {
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.item-list ul.pager li a:link, .item-list ul.pager li a:visited {
+  color: #C2531A;
+}
+
+.item-list ul.pager li a:hover, .item-list ul.pager li a:active, .item-list ul.pager li a:focus {
+  color: #fff;
 }
 
 body {
@@ -210,7 +373,7 @@ body {
 }
 
 .breadcrumb a:link, .breadcrumb a:visited {
-  color: dkgray;
+  color: #333333;
 }
 
 .breadcrumb a:hover, .breadcrumb a:focus {
@@ -286,29 +449,12 @@ ul.sf-main-menu li a:link, ul.sf-main-menu li a:visited {
   color: #ffffff;
 }
 
-#block-menu-menu-secondary {
-  text-align: right;
+ul.sf-main-menu li a:hover, ul.sf-main-menu li a:focus {
+  color: #0F7A96;
 }
 
-#block-menu-menu-secondary ul.menu {
-  list-style: none;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-#block-menu-menu-secondary ul.menu li {
-  list-style: none;
-}
-
-#block-menu-menu-secondary ul.menu a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-#block-menu-menu-secondary ul.menu a:link, #block-menu-menu-secondary ul.menu a:visited {
-  color: #ffffff;
+ul.sf-main-menu li a:active, ul.sf-main-menu li a.active {
+  color: #0F7A96;
 }
 
 .l-footer {
@@ -322,15 +468,13 @@ ul.sf-main-menu li a:link, ul.sf-main-menu li a:visited {
   padding-bottom: 10px;
 }
 
-.l-footer .container,
-.l-footer .l-subfooter {
+.l-footer .container {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.l-footer .container:after,
-.l-footer .l-subfooter:after {
+.l-footer .container:after {
   content: " ";
   display: block;
   clear: both;
@@ -369,7 +513,8 @@ ul.sf-main-menu li a:link, ul.sf-main-menu li a:visited {
 }
 
 .l-main {
-  padding: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .l-main .l-content {

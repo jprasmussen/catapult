@@ -9,6 +9,39 @@
 @include breakpoint($small) {}
 
 @include breakpoint($medium) {
+  // Two Sidebars.
+  .two-sidebars {
+    .l-content {
+      @include span(isolate 6 at 4);
+    }
+    .region-sidebar-first {
+      @include span(3);
+    }
+    .region-sidebar-second {
+      @include span(last 3);
+    }
+  }
+  // Left/First Sidebar.
+  .one-sidebar.sidebar-first {
+    .l-content {
+      @include span(last 8);
+    }
+    .region-sidebar-first {
+      @include span(4);
+    }
+  }
+
+  // Right/Second Sidebar.
+  .one-sidebar.sidebar-second {
+    .l-content {
+      @include span(8);
+    }
+    .region-sidebar-second {
+      @include span(last 4);
+    }
+  }
+
+  // HEADER regions.
   .l-branding {
     @include span(3);
   }
@@ -19,18 +52,25 @@
     @include span(12);
   }
 
-  .l-subfooter {
-    @include clearfix();
-    // @include container;
+
+  // FOOTER Regions.
+  .l-footer .container {
+    @include container;
+  }
+  .region-footer {
+    @include span(12);
   }
   .region-footer-a {
-    @include span(4);
+    @include span(3);
   }
   .region-footer-b {
-    @include span(4);
+    @include span(3);
   }
   .region-footer-c {
-    @include span(last 4);
+    @include span(3);
+  }
+  .region-footer-d {
+    @include span(last 3);
   }
 }
 

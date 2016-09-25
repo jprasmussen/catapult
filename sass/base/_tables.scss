@@ -1,19 +1,32 @@
 table {
-	width: 100%;
+  width: 100%;
 }
 
 td, th {
+  padding: $table_cell_padding;
+  vertical-align: middle;
 }
 
 th {
   background-color: $table_header;
+  vertical-align: bottom;
+}
+
+table.table-hover tr:nth-child(even):hover td {
+  background-color: darken($row_even, 3%);
+}
+
+table.table-hover tr:nth-child(odd):hover td {
+  background-color: darken($row_odd, 3%);
 }
 
 tr {
-	&.even {
+  &.even,
+  &:nth-child(even) {
     background-color: $row_even;
-	}
-	&.odd {
+  }
+  &.odd,
+  &:nth-child(odd) {
     background-color: $row_odd;
-	}
+  }
 }

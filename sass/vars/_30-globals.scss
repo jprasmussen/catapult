@@ -17,13 +17,17 @@ $body_bg_color: $smoke; // Page background color.
 
 // Titles and Headings.
 $title_font: null; // defaulting to body font;
-$title_fontcolor: $green; // This is for the H1.
+$title_fontcolor: $gray; // This is for the H1.
+$title_fontweight: 300;
+
 $heading_font: $title_font; // This is for the rest of the headings.
 $heading_fontcolor: $title_fontcolor; // darken($blue, 3%); // This is for the rest of the headings.
+$heading_fontweight: 300;
+
 
 // Butons and Links.
-$button_bg_color: $gold;
-$button_fontcolor: $body_fontcolor;
+$button_bg_color: $ltblue;
+$button_fontcolor: #ffffff;
 $button_radius: 0;
 
 $link: $blue; // Default link color.
@@ -40,7 +44,7 @@ $menu_hover: $blue; // Primary navigation hover.
 $menu_active: $menu_hover; // Primary navigation active and focus color.
 
 $menu_bg: transparent; // Primary navigation background.
-$menu_bg_hover: $green; // Primary navigation hover background.
+$menu_bg_hover: $gray; // Primary navigation hover background.
 $menu_bg_active: $menu_bg_hover; // Primary navigation active and focus background.
 
 $menu_font: null ; // Font used for primary navigation.
@@ -49,7 +53,6 @@ $menu_font_weight: 400;
 
 // Layout and Structural Vars.
 $header_bg:	#ffffff;
-// $header_bg:	rgba(255,255,255, 0.7);
 $header_font: null;
 $header_fontcolor: $blue;
 
@@ -66,11 +69,17 @@ $border_color: $gray; // Gloabl border color.
 $vspace: 20px; // Vertical spacing unit.
 $hspace: 20px; // Horizontal spacing unit.
 
-$tabs_primary_text: $white;
-$tabs_primary_text_active: $white;
 
-$tabs_primary_bg: $blue;
-$tabs_primary_bg_active: $ltblue;
+// Local Tasks
+$tabs_toggle_bg: #fff;
+$tabs_toggle_text: $body_fontcolor;
+
+$tabs_primary_link: lighten($body_fontcolor, 25%);
+$tabs_primary_link_active: $link;
+
+$tabs_primary_bg: transparent;
+$tabs_primary_bg_hover: mix($tabs_primary_link_active, white, 5%);
+$tabs_primary_bg_active: mix($tabs_primary_link_active, white, 5%);
 
 $tabs_secondary_text: $white;
 $tabs_secondary_text_active: $white;
@@ -80,6 +89,7 @@ $tabs_secondary_bg_active: $ltblue;
 
 
 // Tables.
+$table_cell_padding: 10px;
 $row_even: $smoke; // lighten($blue, 30%) Table even row styles
 $row_odd: transparent; // Table odd row styles
 $table_header: $row_even; // Table header row styles
