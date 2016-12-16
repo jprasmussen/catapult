@@ -27,8 +27,7 @@ h1 {
   font-family: $title_font;
   font-size: 1.75em;
   font-weight: $title_fontweight;
-  line-height: 1em;
-  margin-bottom: 0.55em;
+  line-height: 1.1em;
 }
 
 h2 {
@@ -46,9 +45,9 @@ h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
   color: $heading_fontcolor;
-  font-family: $heading_fontcolor;
+  font-family: $heading_font;
   font-weight: $heading_fontweight;
-  line-height: 1em;
+  line-height: 1.1em;
   a {
     @include linkme($title_fontcolor);
   }
@@ -91,5 +90,3 @@ footer a {
     }
   }
 }
-
-

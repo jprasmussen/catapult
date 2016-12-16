@@ -1,43 +1,33 @@
-.tabs--primary-wrapper {
-	position: absolute;
-	z-index: 99;
-	top: 0;
-	right: 0;
-	text-align: right;
-}
-.tabs--primary-toggle {
-	display: inline-block;
-	cursor: pointer;
-	font-size: 0.8em;
-	padding: 2px 10px;
-
-	.icon {
-		padding-right: 5px;
-	}
-	&.active .icon {
-		color: red;
-	}
-}
 ul.tabs--primary {
 	text-align: left;
-	font-size: 0.8em;
-	display: none;
-  border-radius:5px 0 5px 5px;
-
-	&.open {
-		display: block;
-	}
-
+	background-color: $tabs_primary_bg;
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 20px 0;
+
 	li {
 		list-style: none;
+		margin: 0 15px 0 0;
 		padding: 0;
-		margin: 0;
+		display: inline-block;
 
 		a {
 			display: block;
-			padding: 2px 10px;
+			padding: 2px 25px;
+			@include linkme($tabs_primary_text, $tabs_primary_text_active);
+			border-bottom: solid 1px $tabs_primary_text;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: $tabs_primary_bg_active;
+				border-bottom-color: $tabs_primary_text_active;
+				background-color: $tabs_primary_bg_hover;
+			}
+			&.active {
+				color: $tabs_primary_text_active;
+				border-bottom-color: $tabs_primary_text_active;
+				background-color: $tabs_primary_bg_active;
+			}
 		}
 	}
 }

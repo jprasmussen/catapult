@@ -1,0 +1,14 @@
+body {
+  background-color: $body_bg_color;
+}
+
+.l-header {
+  padding: $vspace $hspace;
+  background-size: cover;
+  color: $header_fontcolor;
+  position: relative;
+
+  .container {
+    @include container;
+  }
+}

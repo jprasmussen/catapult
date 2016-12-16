@@ -26,11 +26,17 @@ input[type="search"] {
     border-radius: 0;
 }
 
-.form-text, .form-textarea {
+.form-text,
+.form-textarea {
 	border: 1px solid $border_color;
 	padding: 4px;
+	width: 100%;
 }
-
+@include breakpoint($medium) {
+	.form-text,
+	.form-textarea {
+		width: auto;
+	}
 
 button,
 .form-submit,
@@ -58,4 +64,24 @@ a.tabledrag-handle .handle {
 
 .page-admin .form-actions {
 	padding-top: $vspace;
+}
+
+.node-unpublished {
+	background-color: mix(orange, white, 10%);
+	padding: 30px 10px 10px;
+	position: relative;
+	&:before {
+		content: "Unpublished content";
+		color: orange;
+		border-bottom: solid 1px $border_color;
+		font-size: 0.65em;
+		padding: 5px;
+		line-height: 1em;
+
+		text-transform: uppercase;
+		@include clearfix;
+
+		position: absolute;
+		top: 0;
+	}
 }

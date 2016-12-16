@@ -1,8 +1,8 @@
 // Gradient Maker.
-// @mixin gradient($color1: #efefef, $color2: #fff, $direction: bottom) {
-// 	background-color: $color1;
-// 	@include background-image(linear-gradient($direction, $color1 0%, $color2 100%));
-// }
+@mixin gradient($color1: #efefef, $color2: #fff, $direction: bottom) {
+	background-color: $color1;
+	background-image: linear-gradient($direction, $color1 0%, $color2 100%);
+}
 
 // Cleafix magic.
 @mixin clearfix() {
