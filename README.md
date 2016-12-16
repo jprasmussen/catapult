@@ -10,9 +10,11 @@ run the following command from the project root:
 
 `npm install`
 
+If you don't have Node.js installed it is recommended that you use NVM.
+Learn how to install NVM here: https://github.com/creationix/nvm
 
 ## Commands ##
-Once you have all the dependant plugins installed you can run any of the
+Once you have all the dependent plugins installed you can run any of the
 following commands to compile your CSS.
 
 - `gulp (default for 'gulp watch')`
@@ -21,5 +23,3 @@ following commands to compile your CSS.
 - `gulp sass:production`
 - `gulp clean:css`
 - `gulp lint:sass`
-
-
