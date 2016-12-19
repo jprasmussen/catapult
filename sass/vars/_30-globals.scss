@@ -77,6 +77,9 @@ $tabs_toggle_text: $body_fontcolor;
 $tabs_primary_link: lighten($body_fontcolor, 25%);
 $tabs_primary_link_active: $link;
 
+$tabs_primary_text: $body_fontcolor;
+$tabs_primary_text_active: $body_fontcolor;
+
 $tabs_primary_bg: transparent;
 $tabs_primary_bg_hover: mix($tabs_primary_link_active, white, 5%);
 $tabs_primary_bg_active: mix($tabs_primary_link_active, white, 5%);

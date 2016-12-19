@@ -21,10 +21,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -42,6 +38,10 @@ q::before, q::after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+ul li.leaf {
+  list-style-image: none;
 }
 
 /*# sourceMappingURL=reset.css.map */

@@ -21,9 +21,18 @@ input[type="search"] {
   border-radius: 0;
 }
 
-.form-text, .form-textarea {
+.form-text,
+.form-textarea {
   border: 1px solid #555;
   padding: 4px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-text,
+  .form-textarea {
+    width: auto;
+  }
 }
 
 button,
@@ -89,6 +98,33 @@ a.tabledrag-handle .handle {
 
 .page-admin .form-actions {
   padding-top: 20px;
+}
+
+.node-unpublished {
+  background-color: #fff6e6;
+  padding: 30px 10px 10px;
+  position: relative;
+}
+
+.node-unpublished:before {
+  content: "Unpublished content";
+  color: orange;
+  border-bottom: solid 1px #555;
+  font-size: 0.65em;
+  padding: 5px;
+  line-height: 1em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+}
+
+.node-unpublished:before:before, .node-unpublished:before:after {
+  content: "";
+  display: table;
+}
+
+.node-unpublished:before:after {
+  clear: both;
 }
 
 .l-header:before, .l-header:after,
@@ -265,8 +301,7 @@ h1 {
   color: #555;
   font-size: 1.75em;
   font-weight: 300;
-  line-height: 1em;
-  margin-bottom: 0.55em;
+  line-height: 1.1em;
 }
 
 h2 {
@@ -284,9 +319,8 @@ h4, h5, h6 {
 
 h2, h3, h4, h5, h6 {
   color: #555;
-  font-family: #555;
   font-weight: 300;
-  line-height: 1em;
+  line-height: 1.1em;
 }
 
 h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited {
@@ -350,10 +384,6 @@ footer a:active, footer a.active {
   color: #fff;
 }
 
-body {
-  background-color: #f5f5f5;
-}
-
 .breadcrumb {
   margin: 10px 20px;
   display: block;
@@ -384,77 +414,90 @@ body {
   color: #0F7A96;
 }
 
-.tabs--primary-wrapper {
-  position: absolute;
-  z-index: 99;
-  top: 0;
-  right: 0;
-  text-align: right;
-}
-
-.tabs--primary-toggle {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 0.8em;
-  padding: 2px 10px;
-}
-
-.tabs--primary-toggle .icon {
-  padding-right: 5px;
-}
-
-.tabs--primary-toggle.active .icon {
-  color: red;
-}
-
 ul.tabs--primary {
   text-align: left;
-  font-size: 0.8em;
-  display: none;
-  border-radius: 5px 0 5px 5px;
+  background-color: transparent;
   margin: 0;
-  padding: 0;
-}
-
-ul.tabs--primary.open {
-  display: block;
+  padding: 10px 0 20px 0;
 }
 
 ul.tabs--primary li {
   list-style: none;
+  margin: 0 15px 0 0;
   padding: 0;
-  margin: 0;
+  display: inline-block;
 }
 
 ul.tabs--primary li a {
   display: block;
-  padding: 2px 10px;
+  padding: 2px 25px;
+  border-bottom: solid 1px #333333;
 }
 
-ul.menu {
-  margin: 0 10px;
+ul.tabs--primary li a:link, ul.tabs--primary li a:visited {
+  color: #333333;
+  text-decoration: none;
 }
 
-ul.sf-main-menu {
-  float: right;
+ul.tabs--primary li a:hover, ul.tabs--primary li a:focus {
+  color: #333333;
 }
 
+ul.tabs--primary li a:active, ul.tabs--primary li a.active {
+  color: #0F7A96;
+}
+
+ul.tabs--primary li a:hover, ul.tabs--primary li a:active, ul.tabs--primary li a:focus {
+  background-color: #f3f8fa;
+  border-bottom-color: #333333;
+  background-color: #f3f8fa;
+}
+
+ul.tabs--primary li a.active {
+  color: #333333;
+  border-bottom-color: #333333;
+  background-color: #f3f8fa;
+}
+
+ul.main-menu li a,
 ul.sf-main-menu li a {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
 }
 
-ul.sf-main-menu li a:link, ul.sf-main-menu li a:visited {
+ul.main-menu li a:link, ul.main-menu li a:visited,
+ul.sf-main-menu li a:link,
+ul.sf-main-menu li a:visited {
   color: #ffffff;
 }
 
-ul.sf-main-menu li a:hover, ul.sf-main-menu li a:focus {
+ul.main-menu li a:hover, ul.main-menu li a:focus,
+ul.sf-main-menu li a:hover,
+ul.sf-main-menu li a:focus {
   color: #0F7A96;
 }
 
-ul.sf-main-menu li a:active, ul.sf-main-menu li a.active {
+ul.main-menu li a:active, ul.main-menu li a.active,
+ul.sf-main-menu li a:active,
+ul.sf-main-menu li a.active {
   color: #0F7A96;
+}
+
+.l-secondary {
+  padding: 40px 20px;
+}
+
+.l-secondary .container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.l-secondary .container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .l-footer {
@@ -493,6 +536,10 @@ ul.sf-main-menu li a:active, ul.sf-main-menu li a.active {
   color: #C2531A;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 .l-header {
   padding: 20px 20px;
   background-size: cover;
@@ -519,22 +566,6 @@ ul.sf-main-menu li a:active, ul.sf-main-menu li a.active {
 
 .l-main .l-content {
   position: relative;
-}
-
-.l-secondary {
-  padding: 40px 20px;
-}
-
-.l-secondary .container {
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.l-secondary .container:after {
-  content: " ";
-  display: block;
-  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */
