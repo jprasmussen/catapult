@@ -95,12 +95,11 @@
 
     <?php print render($page['navigation']); ?>
     <?php print render($page['header']); ?>
-
     </div>
   </header>
 
-  <div class="l-main">
-    <div class="l-content" role="main">
+  <div class="l-main" >
+    <main class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
@@ -117,10 +116,11 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
-    </div>
+    </main>
 
-    <?php print render($page['sidebar_first']); ?>
-    <?php print render($page['sidebar_second']); ?>
+
+        <?php print render($page['sidebar_first']); ?>
+        <?php print render($page['sidebar_second']); ?>
   </div>
 
   <?php if($page['secondary']): ?>
@@ -133,7 +133,7 @@
 
   <footer class="l-footer" role="contentinfo">
     <div class="container">
-    <?php print render($page['footer']); ?>
+      <?php print render($page['footer']); ?>
     </div>
 
     <?php if ($page['footer_a'] || $page['footer_b'] || $page['footer_c'] || $page['footer_d']): ?>

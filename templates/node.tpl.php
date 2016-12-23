@@ -78,22 +78,22 @@
  * @see template_process()
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
+<article class="<?php print $classes; ?> node-<?php print $node->nid; ?>"<?php print $attributes; ?>>
+  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || $preview || !$page && $title): ?>
     <header>
       <?php print render($title_prefix); ?>
-      <?php if (!$page): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
+      <?php if (!$page && $title): ?>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-    </header>
-  <?php endif; ?>
 
-  <?php if ($display_submitted): ?>
-    <footer class="node__submitted">
-      <?php print $user_picture; ?>
-      <p class="submitted"><?php print $submitted; ?></p>
-    </footer>
+      <?php if ($display_submitted): ?>
+        <p class="submitted">
+          <?php print $user_picture; ?>
+          <?php print $submitted; ?>
+        </p>
+      <?php endif; ?>
+    </header>
   <?php endif; ?>
 
   <div<?php print $content_attributes; ?>>
