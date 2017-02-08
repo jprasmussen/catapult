@@ -242,6 +242,12 @@ a.tabledrag-handle .handle {
   padding-top: 20px;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .layout-header,
 .layout-main,
 .layout-footer {

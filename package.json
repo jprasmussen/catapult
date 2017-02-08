@@ -2,10 +2,6 @@
   "name": "gulpstuff",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
-    "test": "gulp"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -28,7 +24,8 @@
     "support-for": "^1.0.6",
     "typey": "^1.0.0",
     "breakpoint-sass": "~2.7.0",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "normalize-scss": "^6.0.0"
   },
   "private": true,
   "scripts": {
