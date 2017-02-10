@@ -2,60 +2,94 @@
 // Gloabl Vars.
 // ------------------------------------
 
-// Messages and feedback colors.
-$error: red;
-$warning: yellow;
-$information: green;
-
-
 // Body/HTML Settings.
-$body_font: 'Open Sans', sans-serif; // Default font.
-$body_fontsize: 16px; // Base or root font-size.
+// ------------------------------------
+
+// Default font.
+$body_font: 'Open Sans', sans-serif;
+// Base or root font-size.
+$body_fontsize: 16px;
+// Base line height.
 $body_lineheight: 1.5em;
-$body_fontcolor: $color_dkgray; // Default font color.
-$body_bg_color: $color_smoke; // Page background color.
+// Default font color.
+$body_fontcolor: $color_dkgray;
+// Page background color.
+$body_bg_color: $color_smoke;
 
 
 // Titles and Headings.
-$title_font: null; // defaulting to body font;
-$title_fontcolor: $color_blue; // This is for the H1.
-$heading_font: $title_font; // This is for the rest of the headings.
-$heading_fontcolor: $title_fontcolor; // darken($color_blue, 3%); // This is for the rest of the headings.
+// ------------------------------------
+
+// defaulting to body font.
+$title_font: null;
+// This is for the H1.
+$title_fontcolor: $color_blue;
+// This is for the rest of the headings.
+$heading_font: $title_font;
+// This is for the rest of the headings.
+$heading_fontcolor: $title_fontcolor;
 
 
 // Butons.
+// ------------------------------------
+
+// Main button color.
 $button_bg_color: $color_blue;
+// Text color of the button.
 $button_fontcolor: #fff;
+// Roundness of the button.
 $button_radius: 0;
 
 
-// Gloabl Links.
-$link: $color_blue; // Default link color.
-$link_hover: $color_orange; // Default link hover.
-$link_active: $color_blue; // Default link active and focus color.
+// Gloabl link styles (mostly in the main body of text).
+// ------------------------------------
+
+// Default link color.
+$link: $color_blue;
+// Default link hover.
+$link_hover: $color_orange;
+// Default link active and focus color.
+$link_active: $color_blue;
 
 
 // Footer Links.
-$footer_link: #ffffff; // Footer link color.
-$footer_link_hover: $color_red; // Footer link hover.
-$footer_link_active: $color_orange; // Footer link color.
+// ------------------------------------
+
+// Footer link color.
+$footer_link: #ffffff;
+// Footer link hover.
+$footer_link_hover: $color_red;
+// Footer link color.
+$footer_link_active: $color_orange;
 
 
-// Menu colors, mostly for the primary navigation.
-$menu: #ffffff; // Primary navigation color.
-$menu_hover: $color_blue; // Primary navigation hover.
-$menu_active: $menu_hover; // Primary navigation active and focus color.
+// Main menu link colors.
+// ------------------------------------
+
+// Primary navigation color.
+$menu: #ffffff;
+// Primary navigation hover.
+$menu_hover: $color_blue;
+// Primary navigation active and focus color.
+$menu_active: $menu_hover;
 
 
 // Primary naviation bg colors and font settings.
-$menu_bg: transparent; // Primary navigation background.
-$menu_bg_hover: $color_green; // Primary navigation hover background.
-$menu_bg_active: $menu_bg_hover; // Primary navigation active and focus background.
-$menu_font: null ; // Font used for primary navigation.
+// ------------------------------------
+// Primary navigation background.
+$menu_bg: transparent;
+// Primary navigation hover background.
+$menu_bg_hover: $color_green;
+// Primary navigation active and focus background.
+$menu_bg_active: $menu_bg_hover;
+// Font used for primary navigation.
+$menu_font: null ;
+// Font weight for primary navigation.
 $menu_font_weight: 400;
 
 
 // Layout and Structural Vars.
+// ------------------------------------
 $header_bg:	#ffffff;
 $header_font: null;
 $header_fontcolor: $color_blue;
@@ -65,12 +99,14 @@ $hspace: 20px; // Horizontal spacing unit.
 
 $main_bg: null; // The main content aera.
 
+// ------------------------------------
 $footer_color: $color_blue; // Font color.
-$footer_bg: $color_ltblue; // Background color.
+$footer_bg: $color_ltgray; // Background color.
 $footer_size: 0.8em; // Text size.
 
 
 // Tables.
+// ------------------------------------
 $table_cell_padding: 10px;
 $row_even: $color_smoke; // Table even row styles
 $row_odd: transparent; // Table odd row styles
@@ -78,6 +114,7 @@ $table_header: $row_even; // Table header row styles
 
 
 // Local tasks and Tabs.
+// ------------------------------------
 $tabs_primary_text: $color_white;
 $tabs_primary_text_active: $color_white;
 
@@ -92,4 +129,5 @@ $tabs_secondary_bg_active: $color_ltblue;
 
 
 // Misc stuff.
+// ------------------------------------
 $border_color: $color_gray; // Gloabl border color.
