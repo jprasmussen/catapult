@@ -50,7 +50,6 @@
       {{ page.branding }}
       {{ page.header }}
       {{ page.navigation }}
-      {{ page.socialmedia }}
     </div>
   </header>
 
@@ -75,7 +74,7 @@
 
   <main role="main" class="layout-main">
 
-    {% if page.highlighted %}
+    {% if page.highlighted is defined and page.highlighted|render|striptags|trim  %}
       {{ page.highlighted }}
     {% endif %}
 
@@ -87,13 +86,13 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
+    {% if page.sidebar_first is defined and page.sidebar_first|render|striptags|trim  %}
       <aside class="layout-sidebar-first" role="complementary">
         {{ page.sidebar_first }}
       </aside>
     {% endif %}
 
-    {% if page.sidebar_second %}
+    {% if page.sidebar_second is defined and page.sidebar_second|render|striptags|trim  %}
       <aside class="layout-sidebar-second" role="complementary">
         {{ page.sidebar_second }}
       </aside>
@@ -101,13 +100,13 @@
 
   </main>
 
-{% if page.secondary %}
+{% if page.secondary is defined and page.secondary|render|striptags|trim  %}
   <div class="layout-secondary">
     {{ page.secondary }}
   </div>
 {% endif %}
 
-{% if page.tertiary %}
+{% if page.tertiary is defined and page.tertiary|render|striptags|trim  %}
   <div class="layout-tertiary">
     {{ page.tertiary }}
   </div>
