@@ -2,6 +2,9 @@
 // Brand Colors.
 // ------------------------------------
 
+$color_primary: #428bca;
+$color_secondary: #50B0C9;
+$color_compliment: complement($color_primary);
 
 
 // ------------------------------------
@@ -14,7 +17,6 @@ $color_green: #5cb85c;
 $color_blue: #428bca;
 $color_indigo: #5bc0de;
 $color_violet: #563d7c;
-
 $color_ltblue: #50B0C9;
 
 

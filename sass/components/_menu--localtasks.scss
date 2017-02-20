@@ -1,43 +1,33 @@
-.tabs--primary-wrapper {
-	position: absolute;
-	z-index: 99;
-	top: 0;
-	right: 0;
-	text-align: right;
-}
-.tabs--primary-toggle {
-	display: inline-block;
-	cursor: pointer;
-	font-size: 0.8em;
-	padding: 2px 10px;
+.block-local-tasks-block {
+	ul.tabs {
+		text-align: center;
 
-	.icon {
-		padding-right: 5px;
-	}
-	&.active .icon {
-		color: red;
-	}
-}
-ul.tabs--primary {
-	text-align: left;
-	font-size: 0.8em;
-	display: none;
-  border-radius:5px 0 5px 5px;
+		li {
+			display: inline-block;
+			list-style: none;
+			padding: 0;
+			margin: 0;
 
-	&.open {
-		display: block;
-	}
-
-	margin: 0;
-	padding: 0;
-	li {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-
-		a {
-			display: block;
-			padding: 2px 10px;
+			a {
+				display: block;
+				padding: 5px 20px;
+				&:link,
+				&:visited {
+					color: $tabs_primary_text;
+					background-color: $tabs_primary_bg;
+				}
+				&:hover,
+				&:focus {
+					color: $tabs_primary_text_hover;
+					background-color: $tabs_primary_bg_hover;
+				}
+				&.is-active,
+				&.active,
+				&:active {
+					color: $tabs_primary_text_active;
+					background-color: $tabs_primary_bg_active;
+				}
+			}
 		}
 	}
 }

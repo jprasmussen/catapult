@@ -115,17 +115,13 @@ $table_header: $row_even; // Table header row styles
 
 // Local tasks and Tabs.
 // ------------------------------------
-$tabs_primary_text: $color_white;
-$tabs_primary_text_active: $color_white;
+$tabs_primary_text: $color_secondary;
+$tabs_primary_text_hover: $color_secondary;
+$tabs_primary_text_active: $color_secondary;
 
-$tabs_primary_bg: $color_blue;
-$tabs_primary_bg_active: $color_ltblue;
-
-$tabs_secondary_text: $color_white;
-$tabs_secondary_text_active: $color_white;
-
-$tabs_secondary_bg: $color_blue;
-$tabs_secondary_bg_active: $color_ltblue;
+$tabs_primary_bg: transparent;
+$tabs_primary_bg_hover: $color_smoke;
+$tabs_primary_bg_active: mix($color_secondary, $color_white, 20%);
 
 
 // Misc stuff.
